@@ -1,0 +1,4 @@
+services:
+#    jvb_memories_user.example:
+#        class: Jvb\Memories\UserBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

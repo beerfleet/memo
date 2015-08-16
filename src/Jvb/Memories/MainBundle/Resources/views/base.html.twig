@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}!!!!!!!!!! TEMPLATE !!!!!!!!!!!{% endblock %}</title>
+  </head>
+
+  {% stylesheets 'bundles/jvbmemoriesmain/css/bootstrap.css' filter='cssrewrite' %}
+  <link rel="stylesheet" href="{{ asset_url }}" />
+  {% endstylesheets %}    
+
+  {% stylesheets 'bundles/jvbmemoriesmain/css/bootstrap-theme.css' filter='cssrewrite' %}
+  <link rel="stylesheet" href="{{ asset_url }}" />
+  {% endstylesheets %}    
+
+  {% stylesheets 'bundles/jvbmemoriesmain/css/main.css' filter='cssrewrite' %}
+  <link rel="stylesheet" href="{{ asset_url }}" />
+  {% endstylesheets %}    
+
+  <body>
+    <div class="wrapper">
+      {% block top %}      
+      {% endblock top %}
+
+      {% block content %}
+      {% endblock content %}
+
+      <div class="push"></div>
+    </div>
+
+    {% block bottom %}
+      <div id="footer">
+        <div class="container">
+          <p>TEMPLATE FOOTER</p>
+        </div>
+      </div>
+    {% endblock bottom %}
+  </body>
+
+  {% javascripts '@JvbMemoriesMainBundle/Resources/public/js/bootstrap.js' %}
+  <script src="{{ asset_url }}"></script>
+  {% endjavascripts %}
+</html>

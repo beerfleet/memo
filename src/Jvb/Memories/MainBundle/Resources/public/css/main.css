@@ -1,0 +1,57 @@
+*:hover,
+* *:hover,
+* * *:hover {
+  outline: 1px white dotted;
+}
+
+body {
+  background-color: #42120E;
+}
+
+
+/* HOMEPAGE */
+#top, #middle, #bottom {
+  color: white;
+}
+#top {
+  height: 150px;
+}
+#outer {
+  width: 100%;
+}
+#middle {
+  margin: 0 auto;
+  height: 400px;
+  width: 400px;
+  background-image: url('../img/LogonBG.png');  
+  background-repeat: no-repeat;
+  background-size: 400px 400px;
+}
+#bottom {
+  height: 150px;
+}
+
+
+/* FOOTER */
+#footer {
+  color: #e0d3d3;
+  text-shadow: 3px 3px 8px rgba(255, 255, 255, 1);
+}
+
+/*sticky footer*/
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -180px;
+}
+#footer, .push {
+  height: 180px;
+}
+

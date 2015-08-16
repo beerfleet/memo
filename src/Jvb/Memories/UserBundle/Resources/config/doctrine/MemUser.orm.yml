@@ -1,0 +1,11 @@
+Jvb\Memories\UserBundle\Entity\MemUser:
+    type: entity
+    table: fos_user
+    repositoryClass: Jvb\Memories\UserBundle\Entity\MemUserRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    lifecycleCallbacks: {  }
